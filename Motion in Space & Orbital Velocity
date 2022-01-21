@@ -22,10 +22,10 @@ G = 6.671E-11
 ###  m [kg] * (Vf - Vi) [kg m / s] = F [N] dt[s]
 m1 = 120
 #vf = 36 [km / hr] * 1000 [m] / 1 [km] * 1 hr / 60 min * 1 min / 60 sec 
-vf = 36*1000/60/60          ### [m / s]
-vi = 0                      ### [m / s]
-dt = 12                     ### [s]
-f = 120 * (vf - vi) / dt    ### [N]
+vf = 36*1000/60/60          #### [m / s]
+vi = 0                      #### [m / s]
+dt = 12                     #### [s]
+f = 120 * (vf - vi) / dt    #### [N]
 print( round( f , 1) , str('[N]'))
 
 ### Gravity @ surface of planet (scalar form thus no vector r / |r| or r-hat
