@@ -1,16 +1,16 @@
 ### Constants ###
 
 ### Mass in [kg]
-m_mercury = 3.285E+23
-m_earth = 5.972E+24
-m_mars = 6.417E+23
-m_jupiter = 1.898E+27
+m_mercury = 3.285E+23       #### [kg]
+m_earth = 5.972E+24         #### [kg]
+m_mars = 6.417E+23          #### [kg]
+m_jupiter = 1.898E+27       #### [kg]
 
 ### Radius in [m]
-r_mercury = 2.4397E+6
-r_earth = 6.3781E+6
-r_mars = 3.3855E+6
-r_jupiter = 6.9911E+7
+r_mercury = 2.4397E+6       #### [m]
+r_earth = 6.3781E+6         #### [m]
+r_mars = 3.3855E+6          #### [m]
+r_jupiter = 6.9911E+7       #### [m]
 
 ### Gravitational constant [ N m^2 / kg^2] 
 G = 6.671E-11
@@ -22,8 +22,15 @@ G = 6.671E-11
 ###  m [kg] * (Vf - Vi) [kg m / s] = F [N] dt[s]
 m1 = 120
 #vf = 36 [km / hr] * 1000 [m] / 1 [km] * 1 hr / 60 min * 1 min / 60 sec 
-vf = 36*1000/60/60
-vi = 0
-dt = 12
-f = 120 * (vf - vi) / dt
-print(f , str('[N]'))
+vf = 36*1000/60/60          ### [m / s]
+vi = 0                      ### [m / s]
+dt = 12                     ### [s]
+f = 120 * (vf - vi) / dt    ### [N]
+print( round( f , 1) , str('[N]'))
+
+### Gravity @ surface of planet (scalar form thus no vector r / |r| or r-hat
+### solve for force :: F = G * m1 * m2 / r^2
+### solve for mass 1 :: F * r^2 / G m2
+f2 = 648.5 # [N]
+m1 = (f2 * r_earth ** 2) / (G * m_earth)
+print( round( f , 1) , str('[N]'))
