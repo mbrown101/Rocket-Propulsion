@@ -33,4 +33,8 @@ print( round( f , 1) , str('[N]'))
 ### solve for mass 1 :: F * r^2 / G m2
 f2 = 648.5 # [N]
 m1 = (f2 * r_earth ** 2) / (G * m_earth)
-print( round( f , 1) , str('[N]'))
+print( round( m1 , 1)  , '[kg]')
+
+### Force at the surface of a planet
+f3 = G * m1 * m_mercury / r_mercury ** 2
+print( round( f3 , 1)  , '[N]')
