@@ -1,7 +1,7 @@
 ### Constants ###
 
 ### Mass in [kg]
-m_mercury = 3.285 * 10^23
-m_earth = 5.972 * 10^24
-m_mars = 6.417 * 10^23
-m_jupiter = 1.898 * 10^27
+m_mercury = 3.285 * 10**23
+m_earth = 5.972 * 10**24
+m_mars = 6.417 * 10**23
+m_jupiter = 1.898 * 10**27
