@@ -1,7 +1,29 @@
 ### Constants ###
 
 ### Mass in [kg]
-m_mercury = 3.285 * 10**23
-m_earth = 5.972 * 10**24
-m_mars = 6.417 * 10**23
-m_jupiter = 1.898 * 10**27
+m_mercury = 3.285E+23
+m_earth = 5.972E+24
+m_mars = 6.417E+23
+m_jupiter = 1.898E+27
+
+### Radius in [m]
+r_mercury = 2.4397E+6
+r_earth = 6.3781E+6
+r_mars = 3.3855E+6
+r_jupiter = 6.9911E+7
+
+### Gravitational constant [ N m^2 / kg^2] 
+G = 6.671E-11
+
+
+### Concepts ###
+
+### Momentum change with constant mass = impulse 
+###  m [kg] * (Vf - Vi) [kg m / s] = F [N] dt[s]
+m1 = 120
+#vf = 36 [km / hr] * 1000 [m] / 1 [km] * 1 hr / 60 min * 1 min / 60 sec 
+vf = 36*1000/60/60
+vi = 0
+dt = 12
+f = 120 * (vf - vi) / dt
+print(f , str('[N]'))
