@@ -1,6 +1,6 @@
 ### Derivations ###
 
-Orbital Velocity:
+**Orbital Velocity:**
 
 Setting Gravitational force = Centripetal force
 
