@@ -4,7 +4,7 @@ Orbital Velocity:
 
 Setting Gravitational force = Centripetal force
 
-$F_g$ = $\frac{G M m}{r^2}$
+$F{_g}$ = $\frac{G M m}{r^2}$
 
 where: 
 G => gravitational constant 
