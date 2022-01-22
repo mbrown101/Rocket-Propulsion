@@ -1,6 +1,4 @@
-# Rocket-Propulsion
-
-##### Derivations ######
+### Derivations ###
 
 Orbital Velocity:
 
