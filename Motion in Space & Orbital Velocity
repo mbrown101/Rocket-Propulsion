@@ -36,5 +36,13 @@ m1 = (f2 * r_earth ** 2) / (G * m_earth)
 print( round( m1 , 1)  , '[kg]')
 
 ### Force at the surface of a planet
+## Mercury
 f3 = G * m1 * m_mercury / r_mercury ** 2
 print( round( f3 , 1)  , '[N]')
+
+### Acceleration on Jupiter surface
+a6 = G  * m_jupiter / r_jupiter ** 2
+print( round( a6 , 2)  , '[N]')
+
+
+
