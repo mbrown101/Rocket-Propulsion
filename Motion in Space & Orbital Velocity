@@ -76,3 +76,11 @@ alt = 1.205E6
 r = r_earth + alt
 Vo = (G * m_earth / r)**.5
 print('Vo' ,  round(Vo / 1000 , 1) , '[km]')
+
+### Gravitational force between asteroid and satellite
+Ma = 3.405E+13    ## [kg]
+Ra = 9.45E5       ## [m] 
+M_tractor = 1090  ##[kg]
+alt = 500E+3      ## [m]
+F = G * Ma * M_tractor / ((Ra + alt) ** 2) ## [N]
+print('F = ' ,  round(F * 1E+6 , 1) , '[uN]')
