@@ -59,3 +59,20 @@ w_ratio = m_mars / m_earth
 p = (s * w_ratio**.5) / (1 + ( w_ratio )**.5)
 print( round( p , 2)  , '[m]')
 print( "{:.2E}".format(p) , '[m]' )
+
+### Calculate mass flow
+## Fx due to gravity = mass_rate * exh velocity
+## mass_rate = Fx_grav / exh velocity
+Ms = 5.49E+5  ## [kg]
+Mx = 1.309E+22 ## [kg]
+Rx = 1.1883E+6 ## [m]
+Vexh = 1.15E3 ## [m/s]
+fxg = G * Ms * Mx / Rx ** 2
+mass_rate = fxg / Vexh
+print( 'mass-rate = ' , round( mass_rate , 2)  , '[kg / s]')
+
+### Orbital Velocity
+alt = 1.205E6
+r = r_earth + alt
+Vo = (G * m_earth / r)**.5
+print('Vo' ,  round(Vo / 1000 , 1) , '[km]')
