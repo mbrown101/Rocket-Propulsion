@@ -58,4 +58,4 @@ s = 5.46E10 ### [M]
 w_ratio = m_mars / m_earth
 p = (s * w_ratio**.5) / (1 + ( w_ratio )**.5)
 print( round( p , 2)  , '[m]')
-print( "{:.2E}".format(p))
+print( "{:.2E}".format(p) , '[m]' )
