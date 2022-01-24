@@ -45,4 +45,10 @@ a6 = G  * m_jupiter / r_jupiter ** 2
 print( round( a6 , 2)  , '[N]')
 
 
+### Force experienced by mass on surface of planet [earth] accelerating
+### Force total = Force Gravity + Force mass acceleration
+m = 59  ## [kg]
+a = 4.3 ##[m / s]
 
+Ft = (G * m_earth * m / r_earth**2) + m*a
+print( round( Ft , 2)  , '[N]')
